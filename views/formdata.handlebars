@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register Interest</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="registerBG">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bgWhite">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/svgs/logo.svg" width="180" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item pr-2">
+            <a class="nav-link nav-li-text" href="#">SEE HOMES <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link nav-li-text" href="#">ABOUT US</a>
+
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link nav-li-text" href="#">HOW IT WORKS</a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link nav-li-text" href="#">FAQ's</a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link nav-li-text" href="#">CONTACT US</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <button class="join-btn">REGISTER INTEREST</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col l12 mt-5 mb-3">
+      <p class="section-3-title">Register Interest</p>
+    </div>
+  </div>
+  <!--Form Section-->
+
+  <div class="container form-bgWhite mb-5 px-5 py-5">
+    <form action="/submit" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <p class="form-personal-title">Enter personal details</p>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Household Income</label>
+          <input type="tel" class="form-control" name='householdIncome' id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Minimum Deposit</label>
+          <input type="tel" class="form-control" id="inputPassword4" name='minimumDeposit'>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">First Name</label>
+          <input type="text" class="form-control" name='firstName' id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input type="text" class="form-control" name='lastName' id="inputPassword4">
+        </div>
+      </div>
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email Address</label>
+          <input type="email" class="form-control" name='email' id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Phone Number</label>
+          <input type="tel" class="form-control" name='phone' id="inputPassword4">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p class="form-label-med">Status</p>
+        <div class="form-check checkbox">
+          <input class="form-check-input" type="radio" id="gridCheck" name="status" value="single">
+          <label class="form-check-label" for="gridCheck">
+            <span class="form-label-sm">Single</span>
+          </label>
+        </div>
+        <br>
+        <div class="form-check checkbox">
+
+          <input class="form-check-input" type="radio" id="gridCheck" name="status" value="married">
+          <label class="form-check-label" for="gridCheck">
+            <span class="form-label-sm">Married</span>
+          </label>
+        </div>
+        <br>
+
+        <div class="form-check checkbox">
+          <input class="form-check-input" type="radio" id="gridCheck" name="status" value="partner">
+          <label class="form-check-label" for="gridCheck">
+            <span class="form-label-sm">Partner</span>
+          </label>
+        </div>
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Your Occupation</label>
+          <input type="text" class="form-control" name='occupation' id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Company Name</label>
+          <input type="text" class="form-control" name='company' id="inputPassword4">
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="form-label-med">How long have you been renting?</p>
+        <div class="form-check checkbox">
+          <input class="form-check-input" type="radio" name='rent' 
+            value='greater than 1' id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            <span class="form-label-sm">
+              < 1 Year</span> </label> </div> <br>
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="radio" 
+                    name='rent' value='1-2' id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    <span class="form-label-sm">1-2 Years</span>
+                  </label>
+                </div>
+                <br>
+                <div class="form-check checkbox">
+
+                  <input class="form-check-input" type="radio" 
+                    name='rent' value='2-3' id="gridCheck" >
+                  <label class="form-check-label" for="gridCheck">
+                    <span class="form-label-sm">2-3 Years</span>
+                  </label>
+                </div>
+                <br>
+
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="radio"
+                    name='rent' value='3+' id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    <span class="form-label-sm">3+ Years</span>
+                  </label>
+                </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-6">
+            <label class="form-label-med">What is your current rent per month?</label>
+            <input type="range" min="1" max="10000" value="150" class="slider" id="myRange">
+          </div>
+          <div id="range-value-container" class="mt-3 ml-3 ">
+            <span class="euro-range">€</span><span id="range-value"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <p class="form-label-med">Where would you like to live?</p>
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D1' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D1</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D6' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D6</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+
+            <input class="form-check-input" type="checkbox"
+                value='D10' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D10</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='15' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">15</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='20' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">20</span>
+            </label>
+          </div>
+          <br>
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D2' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D2</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D7' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D7</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+
+            <input class="form-check-input" type="checkbox"
+                value='D11' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D11</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='16' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">16</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='21' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">21</span>
+            </label>
+          </div>
+
+          <br>
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D3' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D3</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D8' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D8</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+
+            <input class="form-check-input" type="checkbox"
+                value='D12' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D12</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='17' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">17</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='22' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">22</span>
+            </label>
+          </div>
+          <br>
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D4' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D4</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D9' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D9</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+
+            <input class="form-check-input" type="checkbox"
+                value='D13' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D13</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='18' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">18</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='23' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">23</span>
+            </label>
+          </div>
+
+          <br>
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox"
+                value='D5' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D5</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox">
+            <input class="form-check-input" type="checkbox"
+                value='D10' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D10</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox">
+
+            <input class="form-check-input" type="checkbox"
+                value='D15' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">D15</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox">
+            <input class="form-check-input" type="checkbox"
+                value='20' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">20</span>
+            </label>
+          </div>
+
+          <div class="form-check checkbox">
+            <input class="form-check-input" type="checkbox"
+                value='25' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">25</span>
+            </label>
+          </div>
+
+          <br />
+          <div class="form-check checkbox">
+            <input class="form-check-input" type="checkbox"
+                value='SouthCountyDublin' id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">South County Dublin</span>
+            </label>
+          </div>
+          <div class="form-check checkbox">
+            <input class="form-check-input" type="checkbox"
+                value='NorthCountyDublin' id="gridCheck" >
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">North County Dublin</span>
+            </label>
+          </div>
+
+
+        </div>
+
+        <div class="form-row">
+          <p class="form-label-med col-md-12">What are you intending to buy</p>
+          <!-- <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Email Address</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                  </div> -->
+          <div class="form-group col-md-6">
+            <label for="month">Select a month</label>
+            <select id="month" class="form-control" name="month">
+              <option selected>Choose...</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July </option>
+              <option>August </option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="form-row mt-5">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Leave us a note (Optional)</label>
+            <input type="text" class="form-control" 
+              name='note' id="inputEmail4">
+          </div>
+        </div>
+        <div class="form-group mb-5">
+          <div class="form-check checkbox mr-1">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              <span class="form-label-sm">I agree to the</span><a class="form-label-sm terms">terms and conditions</a>
+            </label>
+          </div>
+
+
+        </div>
+        <div class="form-group col-md-12 submitOn  mt-5">
+          <button type="submit" class="btn btn-primary">
+            <p class="submitText mt-3">PROCEED</p>
+          </button>
+        </div>
+
+    </form>
+  </div>
+  <!-- Footer-->
+  <!-- <footer class="page-footer footer-bg">
+                            <div class="footer-container">
+                              <div class="row">
+                                <div class="col l4 s12">
+                                  <img 
+                                    src="./assets/img/footer-logo.png" 
+                                    alt="CapitalTogeterLogo"
+                                    height="24px"
+                                    width="201px"/>
+                                  <div class="row section">
+                                    <div class="col l1 s12">
+                                      <img 
+                                        src="./assets/img/facebook.png" 
+                                        alt="facebook icon"
+                                        height="25"
+                                        width="25"/>
+                                    </div>
+                                    <div class="col l1 s12">
+                                      <img 
+                                        src="./assets/img/twitter.png" 
+                                        alt="facebook icon"
+                                        height="25"
+                                        width="25"/>
+                                    </div>
+                                    <div class="col l1 s12">
+                                      <img 
+                                        src="./assets/img/instagram.png" 
+                                        alt="facebook icon"
+                                        height="25"
+                                        width="25"/>
+                                    </div>
+                                    <div class="col l1 s12">
+                                      <img 
+                                        src="./assets/img/youtube.png" 
+                                        alt="facebook icon"
+                                        height="25"
+                                        width="25"/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col l2 s12">
+                                  <h5 class="white-text footer-heading">Company</h5>
+                                  <ul>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">Home</a></li>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">About Us</a></li>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">FAQ's</a></li>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">Workperk</a></li>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">Agents</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col l2 s12">
+                                  <h5 class="white-text footer-heading">Legal</h5>
+                                  <ul>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">Terms and Conditions</a></li>
+                                    <li class="padd-bottom"><a class="white-text footer-link" href="#!">Disclaimer</a></li>
+                                    <li class="padd-bottom" ><a class="white-text footer-link" href="#!">Legal</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col l2 s12">
+                                  <h5 class="white-text footer-heading">PRODUCT</h5>
+                                  <ul>
+                                    <li class="padd-bottom" ><a class="white-text footer-link" href="#!">See Homes</a></li>
+                                    <li class="padd-bottom" ><a class="white-text footer-link" href="#!">Calculate Rent</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col l2 s12">
+                                  <h5 class="white-text footer-heading">SUPPORT</h5>
+                                  <ul>
+                                    <li class="row padd-bottom">
+                                      <img 
+                                      src="./assets/img/phone-fill.png" 
+                                      alt="phone"
+                                      height="18"
+                                      width="18"/>
+                                      <a class="white-text footer-link" href="#!">+123 (456) 789</a>
+                                    </li>
+                                    <li class="row padd-bottom">
+                                      <img 
+                                      src="./assets/img/mail-fill.png" 
+                                      alt="phone"
+                                      height="18"
+                                      width="18"/>
+                                      <a class="white-text footer-link" href="#!">capitaltogether@email.ie</a>
+                                    </li>
+                                    <li class="row padd-bottom">
+                                      <img 
+                                      src="./assets/img/map-pin-fill.png" 
+                                      alt="phone"
+                                      height="18"
+                                      width="18"/>
+                                      <a class="white-text footer-link" href="#!">55 Abington Malahide St. Co Dublin</a>
+                                    </li>
+                                    
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer-copyright foot-bg">
+                              <div class="copy-container footer-copyright-text">
+                                Copyright © 2019 Capital Together All rights reserved
+                              </div>
+                            </div>
+                          </footer> -->
+</body>
+
+<script src="js/register.js"></script>
+
+</html>
