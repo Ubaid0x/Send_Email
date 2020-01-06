@@ -54,7 +54,7 @@ app.post('/submit', (req, res) => {
         secure: true, // true for 465, false for other ports
         auth: {
             user: 'apikey', // generated ethereal user
-            pass: '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'  // generated ethereal password
+            pass: 'enter your key'  // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
